@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>LifeManaged</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Gotham";
+        }
+        .headerwaper {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .logo {
+            width: 100%;
+            padding: 12px 0px;
+        }
+        .navbar nav ul li{
+        position: relative;
+    }
+ .navbar nav ul  ul{
+    position: absolute;
+    display: none;
+    background:black;
+    
+ }
+ .navbar nav ul ul li a{
+    color:white;
+    text-align: center;
+    padding: 20px 0px;
+    
+ }
+ .navbar nav ul li:hover
+ ul{
+    display: block;
+ }
+ .navbar nav ul ul li{
+    position: relative;
+ }
+ .navbar nav ul ul ul{
+    position: absolute;
+    display: none;
+    left:100px;
+    top:10px;
+ }
+ .navbar{
+	width: auto;
+	position: absolute;
+	top:10px;
+    right: 0;
+    cursor: pointer;
+}
+.navbar nav{
+	float: left
+	width:auto;
+}
+.navbar nav ul {
+	float: left;
+	margin-right:20px;
+    margin-top:0px;
+    }
+.navbar nav ul li {
+   display: inline-block;
+    padding: 35px 0px;
+    margin-right: 23px;
+    
+}
+.navbar nav ul li a{
+	color:#616161;
+    font-weight:normal;
+    text-decoration: none;       
+}
+.schedule-botton1 {
+    margin-top: 15px;
+    background-color: #ff8000;
+    color: white;
+    border: none;
+    float: left;
+    padding: 12px 10px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 20px;
+    }
+
+    .slider {
+        width: 100%;
+        float: left;
+        background-color: black;
+    }
+    .slider1 {
+        width: 90%;
+        margin: 12px 57px;
+    }
+    .title h1{
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        line-height: 70px;
+        font-size: 61px;
+    }
+    .img-box {
+        width: 100%;
+        background-color: black;
+        display: flex;
+    }
+    .column1 {
+        width: 33.33%;
+        float: left;
+    }
+    .column2 {
+        width: 33.33%;
+        float: left;
+    }
+    .column3 {
+        width: 33.33%;
+        float: left;
+    }
+    .content-box {
+        width: 100%;
+        background-color: white;
+    }
+    .content-info {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .conten-title {
+        margin: 49px 0px;
+    }
+    .content-title h1 {
+        padding-top: 5%;
+        font-size: 92px;
+        line-height: 75px;
+        text-align: center;
+        color: #090805;
+        font-weight: bold;
+    }
+    .content-logo {
+        width: 100%;
+        position: relative;
+        float: left;
+        padding: 5% 0px;
+        display: flex;
+    }
+    .logo2 {
+        width: 22%;
+        float: left;
+        text-align: center;
+        margin-right: 4%;
+    }
+    .logo-paragraph p {
+        font-size: 24px;
+        line-height: 34px;
+        margin-top: 17px;
+        font-weight: bold;
+    }
+    .click-botton {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+    }
+
+    .schedule-botton2{
+    background-color: #ff8000;
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.financial-bg {
+    background: #56c8e2;
+    width: 100%;
+    overflow: auto;
+    
+}
+.bg1 {
+    width: 90%;
+    margin: 0px auto;
+    overflow: hidden;
+    display: flex;
+}
+.bg2 {
+    padding: 60px 0px;
+    width: 100%;
+
+}
+
+.left {
+    
+    width: 48%;
+    float: left;
+}
+
+
+.left h1 {
+    font-size: 80px;
+    line-height: 80px;
+    color: #ffffff;
+}
+.left p {
+    font-size: 35px;
+    line-height: 48px;
+    padding-top: 25px;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+.click-botton1 {
+    width: 100%;
+    text-align: left;
+    padding-top: 5%;
+}
+
+.right {
+    width: 47%;
+    float: right;
+}
+
+
+.logo-content{
+    position: relative;
+    top: -90px;
+    padding-left: 120px;
+}
+
+.logo-content h1 {
+    font-size: 30px;
+    line-height: 51px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.logo-content p {
+    font-size: 20px;
+    line-height: 39px;
+    color: #ffffff;
+}
+
+.video-banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.video-img {
+    width: 100%;
+}
+
+.video-img img {
+    max-width: 100%;
+    border: none;
+
+}
+.play-botton {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-logo {
+    top: 280px;
+    position: absolute;
+
+}
+
+.quote-box {
+    width: 100%;
+    overflow: hidden;
+}
+
+.quote-box1 {
+    width: 90%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.quote-title {
+    width: 100%;
+    padding: 53px 0px
+}
+.quote-title h1 {
+
+    font-size: 60px;
+    line-height: 70px;
+    color: #090805;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+.quote-title p {
+    font-size: 30px;
+    line-height: 51px;
+    color: #ff8003;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer { 
+    width: 100%;
+    float:left;
+    overflow: hidden;
+    background-image: url(https://infosif.in/lifeManaged/lifemanaged/images/footer-bg.png);
+    background-size: cover;
+    
+}
+
+.f-2 {
+    width: 100%;
+    float: left;
+}
+.f-3 {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.footer-title {
+
+    margin-top: 50px;
+
+
+}
+.footer-title h1 {
+    font-size: 75px;
+    line-height: 83px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+.footer-title p {
+    width: 100%;
+    font-size: 30px;
+    line-height: 83px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer2 {
+    width: 100%;
+    overflow: hidden;
+}
+.col {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+.col1 {
+    width: 30%;
+    text-align:center;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+.col-tittle h1 {
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 20px 0px;
+    text-align: center;
+}
+.col-tittle p {
+
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+    text-align: center;
+    padding: 0px 65px;
+}
+
+.col2 {
+    width: 30%;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+
+.col3 {
+    width: 30%;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+
+.col-botton {
+    width: 100%;
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.btn {
+    width: 206px;
+    height: 59px;
+    border-radius: 3px;
+    border: 2px solid #ffffff;
+    color: white;
+    font-weight: bold;
+    padding: 13px 26px;
+    font-size: 24px;
+}
+
+.about {
+    width: 100%;
+    background-color: #171717;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.about-tittle h1 {
+
+    font-size: 17px;
+    line-height: 28px;
+    color: #ff8003;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 5%;
+}
+
+.about-col1 {
+    width: 35%;
+    display: inline;
+}
+.about-col1 p {
+    color: white;
+    line-height: 25px;
+}
+
+
+.about-col2 li {
+    color: white;
+    line-height: 25px;
+    list-style-type: none;
+    display: block;
+}
+
+.about-tittle span {
+    display: block;
+    font-size: 14px;
+    line-height: 35px;
+    color: #ffffff;
+}
+.about-tittle span a {
+    color: #ff8003;
+}
+.copyright-box {
+    width: 100%;
+    overflow: hidden;
+    background-color: #171717;
+
+}
+.copyright {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.copyright p {
+
+    line-height: 35px;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+
+
+   </style>
+</head>
+<body>
+    <header>
+        <div class="headerwaper">
+            <div class="logo">
+                <img src="logo.png" alt="LifeManaged logo" max-width="100%"  >
+            </div>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#">About</a>
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">ABOUT</a>
+                                <ul>
+                                    <li><a href="#">Rating</a></li>
+                                    <li><a href="#">Info-About</a></li>
+                                    <li><a href="#">Finacial-Data</a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">HELPLINE NO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">How We Work</a></li>
+                    <li><a href="#">How We Get Paid</a></li>
+                </ul>
+                <botton class="schedule-botton1">Shedule A Call</botton>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="slider">
+        <div class="slider1">
+            <div class="title">
+                <h1>WE CREATE <span style="color: #ff8000;">PATHWAYS</span>TO EXPERIENCE <span style="color: #ff8000;">LIFE ON YOUR TERMS</span></h1>
+            </div>
+        </div>
+    </div>
+    <div class="img-box">
+        <div class="column1">
+        <div class="img1">
+        <img src="sliderimg1.png" alt="sliderimg1.png" width="100%">
+    </div>
+</div>
+    <div class="column2">
+        <div class="img2">
+            <img src="sliderimg2.png" alt="sliderimg2" width="100%">
+        </div>
+    </div>
+    <div class="column3">
+        <div class="img3">
+            <img src="sliderimg3.png" alt="sliderimg3.png" width="100%">
+        </div>
+    </div>
+</div>
+<div class="content-box">
+        <div class="content-info">
+            <div class="content-title">
+                <h1>We believe no matter what stage of life you’re in...</h1>
+            </div>
+            <div class="content-logo">
+                <div class="logo2">
+                    <img src="logo-content.png" alt="logo-content">
+                    <div class="logo-paragraph">
+                        <p>A life managed well is not ruled by numbers & plans, but freed by them.</p>
+                    </div>
+                </div>
+                
+                <div class="logo2">
+                    <img src="logo-content2.png" alt="logo-content2.png">
+                    <div class="logo-paragraph">
+                        <p>A life managed well is not ruled by numbers & plans, but freed by them.</p>
+                    </div>
+                </div>
+                <div class="logo2">
+                    <img src="logo-content3.png" alt="logo-content3">
+                    <div class="logo-paragraph">
+                        <p>Poor decisions are too often made because of a lack of clarity.</p>
+                    </div>
+                </div>
+                <div class="logo2">
+                    <img src="logo-content4.png" alt="logo-content4">
+                    <div class="logo-paragraph">
+                        <p>This industry’s model ofrewarding good sales over good advice is outdated.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="click-botton">
+            <botton class="schedule-botton2">Schedule A Call</botton>
+        </div>
+        </div>
+    </div>
+    <div class="financial-bg">
+        <div class="bg1">
+            <div class="bg2">
+            <div class="left">
+                <h1>We are independent financial planning & life management coaches</h1>
+                <p>You want to trust that your financial plans & future are managedwell.</p>
+                <div class="click-botton1">
+                    <botton class="schedule-botton2">Schedule A Call</botton>
+                </div>
+            </div>
+            <div class="right">
+                <div class="financial-logo">
+                    <img src="Layer 29.png" alt="layer 29" max-width="100%">
+                </div>
+
+                <div class="logo-content">
+                    <h1>FIDUCIARY</h1>
+                    <p>Big word...simple concept. At the core of our business is doing what’s best for YOU, not us.</p>
+                </div>
+
+                <div class="financial-logo"> 
+                    <img src="images/Layer 30.png" max-width="100%">
+                </div>
+                
+                <div class="logo-content">
+                    <h1>COMMISSION-FREE</h1>
+                    <p>Commissions suck the life out of your financial portfolio. Our transparent fee schedule makes it clear and easy to understand how we get paid. No hidden fees, ever.</p>
+                </div>
+                
+                <div class="financial-logo">
+                    <img src="https://infosif.in/lifeManaged/lifemanaged/images/Layer 31.png">
+                </div>
+                <div class="logo-content">
+                    <h1>CFP®️ PROFESSIONAL</h1>
+                    <p>A highly desired, and not-easy-to-achieve designation that ensures we’re always improving ourselves and our knowledge so we can serve you better.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="video-banner">
+    <div class="video-img">
+        <img src="video-banner.png" alt="video-banner">
+    </div>
+    <div class="play-botton">
+        <div class="play-logo">
+            <img src="video-logo.png" alt="video-logo">
+        </div>
+    </div>
+</div>
+
+<div class="quote-box">
+    <div class="quote-box1">
+        <div class="quote-title">
+            <h1>“But in the end, financial decisions aren’t about getting rich. They’re about getting what you want—getting happy.”</h1>
+            <p>Carl Richards, The Behavior Gap</p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="f-2">
+        <div class="f-3">
+            <div class="footer-title">
+            <h1>Life Managed Case Studies</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="col">
+            <div class="col1">
+                <div class="col1-img">
+                    <img src="radius-img.png" alt="radius-img" max-width="100%">
+                </div>
+                <div class="col-tittle">
+                    <h1>WORK OPTIONAL</h1>
+                    <p>Mark and Jennifer don’t have a set date for retirement — not because they can’t retire, but because they’re not sure they ever want to stop working completely.</p>
+                </div>
+                <div class="col-botton">
+                    <botton class="btn">Learn More</botton>
+                </div>
+            </div>
+
+            <div class="col2">
+                <div class="col2-img">
+                    <img src="radius-img2.png" alt="radius-img2" max-width="100%">
+                </div>
+                <div class="col-tittle">
+                    <h1>RETIRED</h1>
+                    <p>Mark and Jennifer don’t have a set date for retirement — not because they can’t retire, but because they’re not sure they ever want to stop working completely.</p>
+                </div>
+                <div class="col-botton">
+                    <botton class="btn"> Learn More</botton>
+                </div>
+            </div>
+
+            <div class="col3">
+                <div class="col3-img">
+                    <img src="radius-img3.png" alt="radius-img3" max-width="100%">
+                </div>
+                <div class="col-tittle">
+                    <h1>NEARING RETIREMENT</h1>
+                    <p>Mark and Jennifer don’t have a set date for retirement — not because they can’t retire, but because they’re not sure they ever want to stop working completely.</p>
+                </div>
+                <div class="col-botton">
+                    <botton class="btn">Learn More</botton>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="about">
+        <div class="about-col1">
+            <div class="about-tittle">
+                <h1>ABOUT LIFE MANAGED</h1>
+                <p>The material on our website is for informational purposes only. We are not asking you to buy or sell a security and are not offering you investment advice.Information on our website is believed to be reliable. Please understand it is not guaranteed. Past performance is not a guarantee. It is also not reliable indicator of future results. Investing means taking risks. Your account value could decline or rise a lot</p>
+            </div>
+        </div>
+
+        <div class="about-col2">
+            <div class="about-tittle">
+                <h1>OUR LINKS</h1>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>How We Work</li>
+                    <li>How We Get Paid</li>
+                    <li>Schedule A Call</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about-col3">
+            <div class="about-tittle">
+                <h1>CONTACT AS</h1>
+                <span>134 N. Central Ave., Suite 104</span>
+                <span>Phoenix, AZ 85012</span>
+                <span>phone <a href="tel:(602)931-5043">(602)931-5043</a></span>
+                <span>Email <a href="mailto:info@lifemanged.com">info@lifemanged.com</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-box">
+        <div class="copyright">
+            <p>&copy;2020 LifeManaged All rights reserved.</p>
+        </div>
+    </div>
+        
+
+
+</body>
+</html>
